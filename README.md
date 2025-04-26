@@ -95,7 +95,7 @@
       <li>Aviation Engineering Basics</li>
       <li>3D Printing & Design</li>
       <li>Algebra, Geometry, Physics</li>
-      <li>Public Speaking & Science Fairs</li>
+      <li>Science Fairs</li>
     </ul>
 
     <h3>Languages</h3>
