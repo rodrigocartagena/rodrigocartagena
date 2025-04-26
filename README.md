@@ -79,10 +79,8 @@
   </div>
 
   <div id="cv" class="tab-content">
-    <h2>Curriculum Vitae</h2>
-    <p><strong>Name:</strong> Rodrigo Cartagena</p>
-    <p><strong>Age:</strong> 15</p>
-    <p><strong>School:</strong> [Your High School Name]</p>
+    <h2>My CV</h2>
+    <p> Rodrigo Cartagena</p>
 
     <h3>Education</h3>
     <ul>
