@@ -1,16 +1,117 @@
-## Hi there 👋
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rodrigo Cartagena</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white; /* Changed to white */
+      color: black; /* Changed to black */
+    }
+    header {
+      background-color: #0f172a;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #1e293b;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: #f1f5f9;
+      padding: 1rem 2rem;
+      display: block;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #334155;
+    }
+    .tab-content {
+      display: none;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .active {
+      display: block;
+    }
+    .link-section {
+      margin-top: 1rem;
+    }
+    .link-section a {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #2563eb;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 3rem;">Rodrigo Cartagena</h1>
+    <p style="font-size: 1.2rem;">Aspiring Engineer | Aviation Enthusiast | Science & Math Explorer</p>
+  </header>
 
-<!--
-**rodrigocartagena/rodrigocartagena** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  <nav>
+    <a href="#" onclick="showTab('home')">Home</a>
+    <a href="#" onclick="showTab('cv')">CV</a>
+  </nav>
 
-Here are some ideas to get you started:
+  <div id="home" class="tab-content active">
+    <h2>Welcome</h2>
+    <p>Hello! I'm Rodrigo, a 15-year-old student passionate about aviation, science, and engineering. Over the years, I've participated in STEM camps, math competitions, and hands-on projects that explore the power of science and imagination. This site is a small portfolio of my journey so far.</p>
+    
+    <h3>Projects & Links</h3>
+    <div class="link-section">
+      <!-- Replace with your own links -->
+      <a href="https://github.com/yourusername" target="_blank">My GitHub Projects</a>
+      <a href="https://www.youtube.com/" target="_blank">YouTube Video – Flight Science Presentation</a>
+      <a href="https://drive.google.com/" target="_blank">My Drone Design PDF</a>
+    </div>
+  </div>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <div id="cv" class="tab-content">
+    <h2>Curriculum Vitae</h2>
+    <p><strong>Name:</strong> Rodrigo Cartagena</p>
+    <p><strong>Age:</strong> 15</p>
+    <p><strong>School:</strong> [Your High School Name]</p>
+
+    <h3>Education</h3>
+    <ul>
+      <li>[School Name] – Grade 9-10</li>
+      <li>Math Olympiad Participant</li>
+      <li>STEM Camp at Rice University – Summer 2024</li>
+    </ul>
+
+    <h3>Skills & Interests</h3>
+    <ul>
+      <li>Aviation Engineering Basics</li>
+      <li>3D Printing & Design</li>
+      <li>Algebra, Geometry, Physics</li>
+      <li>Public Speaking & Science Fairs</li>
+    </ul>
+
+    <h3>Languages</h3>
+    <ul>
+      <li>English – Fluent</li>
+      <li>Spanish – Fluent</li>
+    </ul>
+  </div>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
