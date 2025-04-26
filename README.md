@@ -67,7 +67,8 @@
 
   <div id="home" class="tab-content active">
     <h2>Welcome</h2>
-    <p>Hello! I'm Rodrigo, a 15-year-old student passionate about aviation, science, and engineering. Over the years, I've participated in STEM camps, math competitions, and hands-on projects that explore the power of science and imagination. This site is a small portfolio of my journey so far.</p>
+    <p>Hello! I'm Rodrigo, a 15-year-old student passionate about aviation, science, and engineering. Over the years, I've participated in STEM camps, math competitions, and hands-on projects that explore the power of science and imagination. 
+    Beyond the stem and academics I enjoy making useful 3d printed tools and </p>
     
     <h3>Projects & Links</h3>
     <div class="link-section">
