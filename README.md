@@ -117,8 +117,8 @@
   </div>
 
   <div id="cv" class="tab-content">
+    <h1>Rodrigo Cartagena </h1>
     <h2>My CV</h2>
-    <p> Rodrigo Cartagena</p>
 
     <h3>Education</h3>
     <ul>
