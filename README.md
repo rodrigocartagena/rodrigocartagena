@@ -141,7 +141,6 @@
       <li>Silver Medal, TalentGO – Peru, 2021</li>
       <li>Gold Medal, Mateam – Mexico, 2021</li>
     </ul>
-  <hr/>
   <h3>Bolivian Awards</h3>
   <ul>
     <li>Senate Chamber Tribute, Bolivia, 2024</li>
@@ -151,7 +150,6 @@
     <li>Silver Medal, Physics, Plurinational Student Scientific Olympiad of Bolivia (OCEPB) – Cochabamba, Bolivia, 2022</li>
     <li>Silver Medal, Physics, Plurinational Student Scientific Olympiad of Bolivia (OCEPB) – Santa Cruz, Bolivia, 2023</li>
   </ul>
-
   <h3>Regional Awards</h3>
   <ul>
     <li>Silver Medal, UPSA-MAT – Santa Cruz, Bolivia, 2022</li>
