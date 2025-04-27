@@ -40,6 +40,21 @@
       max-width: 900px;
       margin: auto;
     }
+    .photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.photo-gallery img {
+  width: 250px;
+  height: auto;
+  border: none;
+  box-shadow: none;
+  object-fit: cover;
+}
     .active {
       display: block;
     }
@@ -109,6 +124,18 @@
       <li>Spanish – Fluent</li>
     </ul>
   </div>
+
+<div id="experiences" class="tab-content">
+  <h2>Experiences</h2>
+  <p>Here are some of my favorite projects and experiences:</p>
+
+  <div class="photo-gallery">
+    <img src="https://via.placeholder.com/300" alt="Experience 1">
+    <img src="https://via.placeholder.com/300" alt="Experience 2">
+    <img src="https://via.placeholder.com/300" alt="Experience 3">
+    <!-- Add more pictures by copying another <img> line -->
+  </div>
+</div>
 
   <script>
     function showTab(tabId) {
