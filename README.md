@@ -152,10 +152,9 @@
 
   <h3>
   <strong>
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 150px; vertical-align: middle; margin-right: 10px;">
     AstroCBA
   </strong>
-</h3>
+</h3>  <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 200px; vertical-align: middle; margin-left: 10px;">
   <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
 
   <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
