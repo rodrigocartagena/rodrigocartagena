@@ -135,7 +135,7 @@
   <h2>Experiences</h2>
 
   <div class="photo-gallery">
-    <img src="https://via.placeholder.com/300" alt="Experience 1">
+    <img src="blob:https://web.whatsapp.com/6aea1236-ee46-474a-ac96-0ba84a6acf2a">
     <img src="https://via.placeholder.com/300" alt="Experience 2">
     <img src="https://via.placeholder.com/300" alt="Experience 3">
     <!-- Add more pictures by copying another <img> line -->
