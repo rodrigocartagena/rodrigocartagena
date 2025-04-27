@@ -122,6 +122,7 @@
     <ul>
       <li>Email: rodrigocartagenav10@gmail.com </li>
     </ul>
+    <hr/>
     <h3>Education</h3>
     <ul>
       <li>Jordan High School, Katy TX, USA – Student 9th Grade</li>
