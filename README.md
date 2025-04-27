@@ -93,8 +93,15 @@
 
   <div id="home" class="tab-content active">
     <h2>Welcome</h2>
-    <p>Hello! I'm Rodrigo, a 15-year-old student passionate about aviation, science, and engineering. Over the years, I've participated in STEM camps, math competitions, and hands-on projects that explore the power of science and imagination. 
-    Beyond the stem and academics I enjoy making useful 3d printed tools and </p>
+    <p>Hello! I'm Rodrigo Cartagena, and I always have my head in the clouds...literally! 😊
+I grew up in Bolivia, a country with huge mountains, dense jungles, and wide, open spaces that can feel like a different world. Since getting from one place to another wasn't always easy or cheap, airplanes were like magic. They could fly over the Andes, cut through the Amazon, and connect people in just a few hours. That wonder from childhood soon became a genuine passion.
+Because of my passion for flying, I immediately became interested in STEM fields, particularly math, physics, and astronomy. I even had the privilege of competing internationally on behalf of Bolivia! The most important thing I've learned from every obstacle is that you can't merely admire airplanes; you must know about them, find ways to improve them, and ensure that flying is affordable and accessible for everyone.
+
+But science isn't everything! I also love music—learning to play the violin and piano has taught me that often the greatest way to grasp the world is via a melody—astronomy, which reminds me how small and magnificent we are in the universe, and chess, which taught me to think a few steps ahead constantly. 
+I enjoy seeing amazing places, learning about different cultures, and traveling. Every journey motivates me to set higher goals and put in more effort to create a future where flying is accessible, easier, and cleaner.
+I appreciate you joining me on this journey to build a world where technology preserves the environment, fosters human connection, and makes advancement accessible to everyone!
+Additionally, never forget that the sky is only the beginning!
+ </p>
     
     <h3>Projects & Links</h3>
     <div class="link-section">
