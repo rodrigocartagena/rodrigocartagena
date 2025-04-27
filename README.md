@@ -47,14 +47,6 @@
   gap: 1rem;
   margin-top: 2rem;
 }
-
-.photo-gallery img {
-  width: 250px;
-  height: auto;
-  border: none;
-  box-shadow: none;
-  object-fit: cover;
-}
     .active {
       display: block;
     }
@@ -67,6 +59,20 @@
       color: #2563eb;
       text-decoration: underline;
     }
+    .photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.photo-gallery img {
+  width: 250px; /* You can change to 200px or 300px if needed */
+  height: auto;
+  border: none;
+  box-shadow: none;
+  object-fit: cover;
+}
   </style>
 </head>
 <body>
