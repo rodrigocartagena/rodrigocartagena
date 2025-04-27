@@ -122,25 +122,42 @@
 
     <h3>Education</h3>
     <ul>
-      <li>[School Name] – Grade 9-10</li>
-      <li>Math Olympiad Participant</li>
-      <li>STEM Camp at Rice University – Summer 2024</li>
+      <li>Jordan High School, Katy TX, USA – Student 9th Grade</li>
+      <li>Seven Lakes Junior High, Katy TX, USA</li>
+      <li>Alemán-Deutsche Schule Santa Cruz, Bolivia</li>
     </ul>
-
-    <h3>Skills & Interests</h3>
+  <hr/>
+    <h3>Awards and Honors</h3>
+    <h3>International Awards</h3>
     <ul>
-      <li>Aviation Engineering Basics</li>
-      <li>3D Printing & Design</li>
-      <li>Algebra, Geometry, Physics</li>
-      <li>Science Fairs</li>
+      <li>Bronze Medal, Copernicus Olympiad Mathematics – New York, 2024</li>
+       <li>Honorable Mention, AMC 8 – USA, 2024</li>
+      <li>Silver Medal, Copernicus Olympiad Astronomy and Physics – Houston, Texas, 2024</li>
+      <li>Gold Medal, International Mathematics Olympiad Challenge (IMOC)</li>
+      <li>Bronze Medal, International Geometry Olympiad Challenge (IGOC)</li>
+      <li>Bronze Medal, Galileo International Astronomy Olympiad (GIAO)</li>
+      <li>Honorable Mention, International Trigonometry Olympiad (ITO) – Indonesia, 2023</li>
+      <li>Honorable Mention, Young Mathematicians Tournament</li>
+      <li>Silver Medal, TalentGO – Peru, 2021</li>
+      <li>Gold Medal, Mateam – Mexico, 2021</li>
     </ul>
+  <hr/>
+  <h3>Bolivian Awards</h3>
+  <ul>
+    <li>Senate Chamber Tribute, Bolivia, 2024</li>
+    <li>Silver Medal, Mathematical Kangaroo – Santa Cruz, Bolivia, 2023</li>
+    <li>Honorable Mention, AMC 8 – Bolivia-USA, 2023</li>
+    <li>Honorable Mention, EULER</li>
+    <li>Silver Medal, Physics, Plurinational Student Scientific Olympiad of Bolivia (OCEPB) – Cochabamba, Bolivia, 2022</li>
+    <li>Silver Medal, Physics, Plurinational Student Scientific Olympiad of Bolivia (OCEPB) – Santa Cruz, Bolivia, 2023</li>
+  </ul>
 
-    <h3>Languages</h3>
-    <ul>
-      <li>English – Fluent</li>
-      <li>Spanish – Fluent</li>
-    </ul>
-  </div>
+  <h3>Regional Awards</h3>
+  <ul>
+    <li>Silver Medal, UPSA-MAT – Santa Cruz, Bolivia, 2022</li>
+  </ul>
+  <hr/>
+</div>
 <div id="communities" class="tab-content">
   <h2>Communities</h2>
 
