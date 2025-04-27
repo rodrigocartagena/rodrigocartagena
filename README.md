@@ -63,6 +63,10 @@
   <nav>
     <a href="#" onclick="showTab('home')">Home</a>
     <a href="#" onclick="showTab('cv')">CV</a>
+    <a href="#" onclick="showTab('communities')">Communities</a>
+    <a href="#" onclick="showTab('webinars')">Webinars</a>
+    <a href="#" onclick="showTab('projects')">Projects</a>
+    <a href="#" onclick="showTab('blogs')">Blogs</a>
     <a href="#" onclick="showTab('experiences')">Experiences</a>
   </nav>
 
