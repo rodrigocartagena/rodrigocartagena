@@ -155,6 +155,23 @@
     <li>Silver Medal, UPSA-MAT – Santa Cruz, Bolivia, 2022</li>
   </ul>
   <hr/>
+  <h3>Languages</h3>
+  <ul>
+    <li>English (Advanced) | Spanish (Native) | Guaraní-Indigenous (Basic) | German (Intermediate) | Portuguese (Basic)</li>
+  </ul>
+  <hr>
+  <h3>Extracurricular Activities</h3>
+  <ul>
+    <li>TAPIA STEAM CAMP, Rice University, 2024</li>
+    <li>AE360 – Principles of Aerodynamics, Washington Youth Rocketry, 2024</li>
+    <li>Engineering: Solving Real-World Problems, Rice University, 2025</li>
+  </ul>
+  <hr>
+  <h3>Hobbies and Interests</h3>
+  <ul>
+    <li>Violin | Piano | Astronomy Club | Swimming | Tennis | Basketball</li>
+  </ul>
+  <hr>
 </div>
 <div id="communities" class="tab-content">
   <h2>Communities</h2>
