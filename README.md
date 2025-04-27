@@ -145,7 +145,7 @@
   <h2>Communities</h2>
 
   <h3><strong>Canguro Matematico - Bolivia</strong></h3>
-  <p>It is the Bolivian branch of Kangourou sa`ns Frontières, the world's most significant international mathematics competition. The Sociedad Boliviana de Educación Matemática and the Olimpiada Matemática Boliviana organize it to encourage mathematical thinking and problem-solving skills in students from third grade in elementary school to sixth grade in secondary school.</p>
+  <p>It is the Bolivian branch of Kangourou sans Frontières, the world's most significant international mathematics competition. The Sociedad Boliviana de Educación Matemática and the Olimpiada Matemática Boliviana organize it to encourage mathematical thinking and problem-solving skills in students from third grade in elementary school to sixth grade in secondary school.</p>
 
   <h3><strong>Team Infinitum</strong></h3>
   <p>A reputable organization for its excellence in preparing young people for national and worldwide arithmetic competitions. Their programs focus on advanced mathematical theories, logical thinking, and problem-solving techniques to give participants excellent comprehension and appreciation of mathematics.</p>
