@@ -152,7 +152,7 @@
 
   <h3>
   <strong>
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 150px; vertical-align: middle; margin-right: 10px;">
     AstroCBA
   </strong>
 </h3>
