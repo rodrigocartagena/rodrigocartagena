@@ -133,7 +133,6 @@
 
 <div id="experiences" class="tab-content">
   <h2>Experiences</h2>
-  <p>Here are some of my favorite projects and experiences:</p>
 
   <div class="photo-gallery">
     <img src="https://via.placeholder.com/300" alt="Experience 1">
