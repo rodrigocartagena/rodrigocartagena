@@ -150,7 +150,12 @@
   <h3><strong>Team Infinitum</strong></h3>
   <p>A reputable organization for its excellence in preparing young people for national and worldwide arithmetic competitions. Their programs focus on advanced mathematical theories, logical thinking, and problem-solving techniques to give participants excellent comprehension and appreciation of mathematics.</p>
 
-  <h3><strong>AstroCBA</strong></h3>
+  <h3>
+  <strong>
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 40px; vertical-align: middle; margin-right: 10px;">
+    AstroCBA
+  </strong>
+</h3>
   <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
 
   <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
