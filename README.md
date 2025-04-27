@@ -110,9 +110,9 @@
     <h3>Projects & Links</h3>
     <div class="link-section">
       <!-- Replace with your own links -->
-      <a href="https://github.com/yourusername" target="_blank">My GitHub Projects</a>
-      <a href="https://www.youtube.com/" target="_blank">YouTube Video – Flight Science Presentation</a>
-      <a href="https://drive.google.com/" target="_blank">My Drone Design PDF</a>
+      <a href="https://github.com/yourusername" target="_blank">Not avalible yet!</a>
+      <a href="https://www.youtube.com/" target="_blank">Not avalible yet!</a>
+      <a href="https://drive.google.com/" target="_blank">Not avalible yet!</a>
     </div>
   </div>
 
@@ -121,6 +121,7 @@
     <h3>My contact information:</h3>
     <ul>
       <li>Email: rodrigocartagenav10@gmail.com </li>
+      <li>Let's connect on <a href="https://www.linkedin.com/in/rodrigo-cartagena-81494a1b5/?msgControlName=view_message_button&msgConversationId=2-MjQxMmRlZjItZTE5OC00ZTQxLTlhMWItMjRlNjczNThhZmY0XzAxMg%3D%3D&msgOverlay=true">LinkedIn</a></li>
     </ul>
     <hr/>
     <h3>Education</h3>
