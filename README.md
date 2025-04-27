@@ -117,9 +117,12 @@
   </div>
 
   <div id="cv" class="tab-content">
-    <h1>Rodrigo Cartagena </h1>
-    <h2>My CV</h2>
-
+    <h2>Rodrigo Cartagena </h2>
+    <h3>My CV</h3>
+    <h3>My contact information:</h3>
+    <ul>
+      <li>Email: rodrigocartagenav10@gmail.com </li>
+    </ul>
     <h3>Education</h3>
     <ul>
       <li>Jordan High School, Katy TX, USA – Student 9th Grade</li>
