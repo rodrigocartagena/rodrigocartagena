@@ -117,8 +117,7 @@
   </div>
 
   <div id="cv" class="tab-content">
-    <h2>Rodrigo Cartagena </h2>
-    <h3>My CV</h3>
+    <h1>My CV</h1>
     <h3>My contact information:</h3>
     <ul>
       <li>Email: rodrigocartagenav10@gmail.com </li>
