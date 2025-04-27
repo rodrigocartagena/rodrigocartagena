@@ -106,8 +106,7 @@
 <p>I appreciate you joining me on this journey to build a world where technology preserves the environment, fosters human connection, and makes advancement accessible to everyone!</p>
 
 <p>Additionally, never forget that the sky is only the beginning!</p>
-
-    
+    <hr />
     <h3>Projects & Links</h3>
     <div class="link-section">
       <!-- Replace with your own links -->
