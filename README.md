@@ -166,7 +166,7 @@
   <hr>
   <h3>Extracurricular Activities</h3>
   <ul>
-    <li>TAPIA STEM CAMP, Rice University, 2024</li>
+    <li> <a href="https://katytimes.com/stories/local-students-attend-award-winning-tapia-camps-at-rice-university,86490" target="_blank">TAPIA STEM CAMP</a>, Rice University, 2024</li>
     <li>AE360 – Principles of Aerodynamics, Washington Youth Rocketry, 2024</li>
     <li>Engineering: Solving Real-World Problems, Rice University, 2025</li>
   </ul>
