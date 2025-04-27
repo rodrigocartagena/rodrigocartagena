@@ -107,7 +107,7 @@
 
 <p>Additionally, never forget that the sky is only the beginning!</p>
     <hr />
-    <h3>Projects & Links</h3>
+    <h3>Recommended pages:</h3>
     <div class="link-section">
       <!-- Replace with your own links -->
       <a href="https://github.com/yourusername" target="_blank">Not avalible yet!</a>
