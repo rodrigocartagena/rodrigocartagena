@@ -194,8 +194,10 @@
   <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
 
   <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
-</div>
 
+<h3><strong>Virtual Flight School Bolivia (EVV)</strong></h3>
+  <p>A pioneer organization in Bolivia for online aviation education was established in 2022 and uses cutting-edge flying simulators, such as Virtual Reality (VR) technology, to provide theoretical and hands-on training programs. Through its courses, students can obtain experience in a highly realistic setting before flying real aircraft, ranging from introductory levels for kids to programs for private and commercial pilots. </p>
+</div>
 <div id="experiences" class="tab-content">
   <h2>Experiences</h2>
 
