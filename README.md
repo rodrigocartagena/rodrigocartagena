@@ -63,6 +63,7 @@
   <nav>
     <a href="#" onclick="showTab('home')">Home</a>
     <a href="#" onclick="showTab('cv')">CV</a>
+    <a href="#" onclick="showTab('experiences')">Experiences</a>
   </nav>
 
   <div id="home" class="tab-content active">
