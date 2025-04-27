@@ -93,7 +93,7 @@
 
   <div id="home" class="tab-content active">
     <h2>Welcome</h2>
-    <p>Hello! I'm Rodrigo Cartagena, and I always have my head in the clouds...literally! 😊</p>
+    <p>Hello! I'm Rodrigo Cartagena,</p>
 
 <p>I grew up in Bolivia, a country with huge mountains, dense jungles, and wide, open spaces that can feel like a different world. Since getting from one place to another wasn't always easy or cheap, airplanes were like magic. They could fly over the Andes, cut through the Amazon, and connect people in just a few hours. That wonder from childhood soon became a genuine passion.</p>
 
