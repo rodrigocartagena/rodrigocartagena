@@ -141,6 +141,20 @@
       <li>Spanish – Fluent</li>
     </ul>
   </div>
+<div id="communities" class="tab-content">
+  <h2>Communities</h2>
+
+  <h3><strong>Canguro Matematico - Bolivia</strong></h3>
+  <p>It is the Bolivian branch of Kangourou sa`ns Frontières, the world's most significant international mathematics competition. The Sociedad Boliviana de Educación Matemática and the Olimpiada Matemática Boliviana organize it to encourage mathematical thinking and problem-solving skills in students from third grade in elementary school to sixth grade in secondary school.</p>
+
+  <h3><strong>Team Infinitum</strong></h3>
+  <p>A reputable organization for its excellence in preparing young people for national and worldwide arithmetic competitions. Their programs focus on advanced mathematical theories, logical thinking, and problem-solving techniques to give participants excellent comprehension and appreciation of mathematics.</p>
+
+  <h3><strong>AstroCBA</strong></h3>
+  <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
+
+  <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
+</div>
 
 <div id="experiences" class="tab-content">
   <h2>Experiences</h2>
