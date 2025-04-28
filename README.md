@@ -198,6 +198,39 @@
 <h3><strong>Virtual Flight School Bolivia (EVV)</strong></h3>
   <p>A pioneer organization in Bolivia for online aviation education was established in 2022 and uses cutting-edge flying simulators, such as Virtual Reality (VR) technology, to provide theoretical and hands-on training programs. Through its courses, students can obtain experience in a highly realistic setting before flying real aircraft, ranging from introductory levels for kids to programs for private and commercial pilots. </p>
 </div>
+<div id="webinars" class="tab-content">
+  <h2>Webinars</h2>
+
+  <h3>Black Holes</h3>
+  <p>
+    In my webinar about black holes, I explained how these mysterious giants can absorb and change the energy and matter of nearby stars to grow even bigger. I used simple examples and cool pictures to make it easy for everybody to understand. I loved talking about one of the most incredible things about the world, and I hope it makes more people want to stay interested and keep exploring space.
+  </p>
+  <hr>
+  <a href="https://www.facebook.com/watch/?v=1062135828030609" target="_blank">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Screenshot%202025-04-27%20235230.png?raw=true" alt="Black Hole Webinar" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+  </a>
+</div>
+<div id="projects" class="tab-content">
+  <h2>Projects</h2>
+
+  <h3>Sky Match: Fighter Jets</h3>
+  <p>
+    It is a matching pairs game, which requires players to find and identify concealed cards, recognizing the name, model, and key features of the aircraft. This improves working memory and focus, which decline with age but can be maintained with mental training. It also boosts visual and spatial memory, which helps the brain establish new neural connections and build cognitive resilience. Moreover, improving or winning boosts self-esteem and delight, making it more than a mental workout.
+  </p>
+  <hr>
+
+  <h3>Blue Sky Builders</h3>
+  <p>
+    Reimagining aviation's future is the goal of this game, not merely building airports or flying planes! Players learn sustainability tactics and enjoy competition and collaboration by making wise choices to cut CO₂ emissions. It's a fun, hands-on method to promote greener skies and demonstrate that innovation and sustainability coexist. Every move contributes to a better tomorrow.
+  </p>
+  <hr>
+
+  <h3>3D Printer</h3>
+  <p>
+    My favorite tool is my 3D printer! I use it to build scale aviation models and custom parts to realize my ideas. Designing something on a computer and seeing it evolve is fascinating. My 3D printing projects teach me about aerodynamics, engineering, and problem-solving.
+  </p>
+  <hr>
+</div>
 <div id="experiences" class="tab-content">
   <h2>Experiences</h2>
 
