@@ -229,6 +229,7 @@
   <p>
     My favorite tool is my 3D printer! I use it to build scale aviation models and custom parts to realize my ideas. Designing something on a computer and seeing it evolve is fascinating. My 3D printing projects teach me about aerodynamics, engineering, and problem-solving.
   </p>
+  <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Pronectss%203d%20print.%20eh.png?raw=true"  style="width: 300px; horizontal-align: middle; margin-down: 10px;">
   <hr>
 </div>
 <div id="blogs" class="tab-content">
