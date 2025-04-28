@@ -231,6 +231,24 @@
   </p>
   <hr>
 </div>
+<div id="blogs" class="tab-content">
+  <h2>Blogs</h2>
+
+  <h3>Wings Over Houston Airshow - Blue Angels</h3>
+  <p>
+    Jet engines roar at Ellington Airport's Wings Over Houston Airshow every fall when the U.S. Navy Blue Angels perform. These expert Boeing F/A-18 Super Hornet pilots do stunning feats that amaze spectators.
+  </p>
+  <p>
+    The Blue Angels' performance is the airshow's highlight, drawing aviation fans and families. Their synchronized aerobatics, tight formations, and high-speed passes show naval aviation's best. But the fun continues! The Wings Over Houston Airshow also showcases historic World War II aircraft, modern military displays, and civilian aerobatics.
+  </p>
+  <hr>
+
+  <!-- Example of image with clickable link -->
+  <a href="https://your-link-here.com" target="_blank">
+    <img src="https://your-image-link-here.com/image.jpg" alt="Wings Over Houston Airshow" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+  </a>
+</div>
+
 <div id="experiences" class="tab-content">
   <h2>Experiences</h2>
 
