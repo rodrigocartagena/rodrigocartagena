@@ -60,7 +60,7 @@
       text-decoration: underline;
     }
 }
-.photo-gallery img {
+.photo-gallery img1 {
   width: 50px; /* You can change to 200px or 300px if needed */
   height: auto;
   border: none;
@@ -249,14 +249,14 @@
 
   <div class="photo-gallery">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/00ec715d-4d23-4aa8-a9fe-e08e7309d04c.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu1.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu2.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu8.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu4.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu5.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu6.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu7.jpg?raw=true" class="photo-gallery img">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu9.jpg?raw=true" class="photo-gallery img">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu1.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu2.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu8.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu4.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu5.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu6.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu7.jpg?raw=true" class="photo-gallery img1">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu9.jpg?raw=true" class="photo-gallery img1">
     
     <!-- Add more pictures by copying another <img> line (/<img src="https://via.placeholder.com/300" alt="Experience 3">//) -->
   </div>
