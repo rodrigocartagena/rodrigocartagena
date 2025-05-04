@@ -263,7 +263,6 @@
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu5.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu6.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu7.jpg?raw=true">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu8.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu9.jpg?raw=true">
     
     <!-- Add more pictures by copying another <img> line (/<img src="https://via.placeholder.com/300" alt="Experience 3">//) -->
