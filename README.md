@@ -258,7 +258,6 @@
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu1.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu2.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu8.jpg?raw=true">
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu3.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu4.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu5.jpg?raw=true">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu6.jpg?raw=true">
