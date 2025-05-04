@@ -59,12 +59,6 @@
       color: #2563eb;
       text-decoration: underline;
     }
-    .photo-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
 }
 .photo-gallery img {
   width: 250px; /* You can change to 200px or 300px if needed */
