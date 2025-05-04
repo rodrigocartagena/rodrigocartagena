@@ -255,9 +255,18 @@
 
   <div class="photo-gallery">
     <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/00ec715d-4d23-4aa8-a9fe-e08e7309d04c.jpg?raw=true">
-    <img src="https://via.placeholder.com/300" alt="Experience 2">
-    <img src="https://via.placeholder.com/300" alt="Experience 3">
-    <!-- Add more pictures by copying another <img> line -->
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu1.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu2.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu8.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu3.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu4.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu5.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu6.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu7.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu8.jpg?raw=true">
+    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu9.jpg?raw=true">
+    
+    <!-- Add more pictures by copying another <img> line (/<img src="https://via.placeholder.com/300" alt="Experience 3">//) -->
   </div>
 </div>
 
