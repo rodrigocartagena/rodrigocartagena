@@ -61,7 +61,7 @@
     }
 }
 .photo-gallery img1 {
-  width: 50px; /* You can change to 200px or 300px if needed */
+  width: 10px; /* You can change to 200px or 300px if needed */
   height: auto;
   border: none;
   box-shadow: none;
