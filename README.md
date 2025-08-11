@@ -120,7 +120,7 @@
     <hr/>
     <h3>Education</h3>
     <ul>
-      <li>Jordan High School, Katy TX, USA – Student 9th Grade</li>
+      <li>Jordan High School, Katy TX, USA – Student 10th Grade</li>
       <li>Seven Lakes Junior High, Katy TX, USA</li>
       <li>Alemán-Deutsche Schule Santa Cruz, Bolivia</li>
     </ul>
