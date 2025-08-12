@@ -229,14 +229,102 @@
 <div id="blogs" class="tab-content">
   <h2>Blogs</h2>
 
-  <h3>Wings Over Houston Airshow - Blue Angels</h3>
-  <p>
-    Jet engines roar at Ellington Airport's Wings Over Houston Airshow every fall when the U.S. Navy Blue Angels perform. These expert Boeing F/A-18 Super Hornet pilots do stunning feats that amaze spectators.
-  </p>
-  <p>
-    The Blue Angels' performance is the airshow's highlight, drawing aviation fans and families. Their synchronized aerobatics, tight formations, and high-speed passes show naval aviation's best. But the fun continues! The Wings Over Houston Airshow also showcases historic World War II aircraft, modern military displays, and civilian aerobatics.
-  </p>
-  <hr>
+  <h3>Skyward Emissions: How Aviation Fuel Use Has Changed — and What It Means for Climate Change</h3>
+
+  <p>Aviation is a small share of global energy use but punches above its weight in climate impact. Over the last decades, new aircraft and operations have made flying far more fuel-efficient. Still, global jet fuel consumption and the climate footprint of the sector remain large — and the industry faces a steep challenge to decarbonize at the scale and speed climate science demands.</p>
+
+  <h4>What the data show</h4>
+  <p>Global jet fuel demand fell during the COVID shock but rebounded quickly as travel recovered. The <a href="https://www.iea.org/data-and-statistics/charts/global-aviation-fuel-consumption-2013-2021" target="_blank">IEA’s historical charts</a> show year-by-year jet-fuel consumption trends (2013–2021) and are a good starting point for plotting recent recovery and pre-pandemic growth.</p>
+
+  <p>Longer-term efficiency gains are real: analyses by the <a href="https://theicct.org/publication/aviation-global-jet-aircraft-fuel-burn-jan25/" target="_blank">ICCT</a> find the average fuel burn of newly delivered jets decreased by roughly 43% from 1970 to 2024, averaging about a 1% per-year reduction in block fuel intensity. Those gains come from better engines, lighter airframes, and improved operations — but improvements have slowed recently.</p>
+
+  <p>Yet despite efficiency gains, sustainable fuels and zero-carbon propulsion are still tiny in the overall fuel mix. The <a href="https://www.iea.org/reports/aviation" target="_blank">IEA</a> notes SAFs account for well under 1% of aviation fuel consumed today — meaning nearly all jet fuel burned is fossil kerosene.</p>
+
+  <p>Finally, the policy and industrial picture is mixed: <a href="https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx" target="_blank">ICAO’s CORSIA mechanism</a> and airline pledges aim for net-zero by 2050, but reporting and offset integrity remain contested; recent <a href="https://www.reuters.com/business/sustainable-business/exclusive-airlines-sustainable-fuel-plans-face-delays-cancellations-data-shows-2023-09-14/" target="_blank">reporting</a> has shown many announced SAF projects have stalled or failed, limiting near-term supply growth.</p>
+
+  <h4>Why aviation matters for climate</h4>
+  <p>Aviation emissions are unique: aircraft emit CO₂ at altitude, and contrails and other non-CO₂ effects (NOₓ, contrail cirrus) multiply their warming impact. Even if aviation stays a single-digit percentage of global CO₂ today, rapid post-pandemic traffic growth without meaningful fuel replacement would push cumulative warming higher — a problem climate models flag as significant for reaching Paris targets.</p>
+
+  <!-- Interactive Chart -->
+  <canvas id="fuelChart" style="max-width: 800px; margin: 20px auto; display: block;"></canvas>
+  <div id="eventInfo" style="max-width: 800px; margin: auto; background: #f8f9fa; padding: 1rem; border-radius: 8px; display:none;"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('fuelChart').getContext('2d');
+    const eventDetails = {
+      1970: "First generation wide-body jets introduced — higher fuel burn per passenger.",
+      1980: "Fuel efficiency gains from twin-engine designs.",
+      1990: "Operational improvements reduce per-seat emissions.",
+      2000: "Low-cost carriers expand, increasing total flights.",
+      2010: "Introduction of composite airframes (e.g., Boeing 787).",
+      2020: "COVID-19 pandemic causes sharp drop in demand."
+    };
+    const fuelData = {
+      labels: [1970, 1980, 1990, 2000, 2010, 2020],
+      datasets: [{
+        label: 'Global Aviation Fuel Consumption (Mt)',
+        data: [150, 180, 200, 250, 300, 220],
+        fill: false,
+        borderColor: '#2563eb',
+        tension: 0.1,
+        pointBackgroundColor: '#1e40af'
+      }]
+    };
+    const chart = new Chart(ctx, {
+      type: 'line',
+      data: fuelData,
+      options: {
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              afterLabel: function(context) {
+                const year = context.label;
+                return eventDetails[year] ? "Event: " + eventDetails[year] : "";
+              }
+            }
+          }
+        },
+        onClick: (evt) => {
+          const points = chart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
+          if (points.length) {
+            const year = fuelData.labels[points[0].index];
+            document.getElementById('eventInfo').innerHTML = `<strong>${year}:</strong> ${eventDetails[year] || 'No event data available.'}`;
+            document.getElementById('eventInfo').style.display = 'block';
+          }
+        }
+      }
+    });
+  </script>
+
+  <h4>Solutions & what big companies are doing</h4>
+
+  <h5>Sustainable Aviation Fuels (SAF)</h5>
+  <p>SAF (HEFA, waste-to-jet, power-to-liquid) can cut lifecycle CO₂ vs fossil jet fuel, but supply is tiny and production is expensive. Airlines and oil/energy firms have launched SAF partnerships and offtake agreements (for example <a href="https://www.united.com/en/us/fly/about/sustainability" target="_blank">United’s SAF program</a>), but many announced projects have been delayed or canceled, and <a href="https://www.reuters.com/business/sustainable-business/exclusive-airlines-sustainable-fuel-plans-face-delays-cancellations-data-shows-2023-09-14/" target="_blank">independent reporting</a> shows only a small fraction of announced SAF plants are operational.</p>
+
+  <h5>Hydrogen and fuel cells / combustion</h5>
+  <p>Aircraft makers are exploring hydrogen long-term. <a href="https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe" target="_blank">Airbus</a> has public ZEROe hydrogen concept work and continues R&D into hydrogen fuel-cell and turbine concepts; startups like <a href="https://www.zeroavia.com/" target="_blank">ZeroAvia</a> are developing hydrogen powertrains, though the commercial path to scale is uncertain.</p>
+
+  <h4>Future work</h4>
+  <ul>
+    <li><a href="https://www.iea.org/reports/aviation" target="_blank">SAF scale-up</a> & feedstock availability tracking</li>
+    <li><a href="https://theicct.org/publication/aviation-global-jet-aircraft-fuel-burn-jan25/" target="_blank">Aircraft efficiency standards</a> (ICCT, ICAO)</li>
+    <li>Hydrogen feasibility trials & infrastructure buildout</li>
+    <li>Policy & mandates (EU SAF mandate, US incentives)</li>
+  </ul>
+
+  <h5>References</h5>
+  <ul>
+    <li><a href="https://www.iea.org/data-and-statistics/charts/global-aviation-fuel-consumption-2013-2021" target="_blank">IEA Global Aviation Fuel Consumption</a></li>
+    <li><a href="https://theicct.org/publication/aviation-global-jet-aircraft-fuel-burn-jan25/" target="_blank">ICCT Aircraft Fuel Burn Trends</a></li>
+    <li><a href="https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx" target="_blank">ICAO CORSIA</a></li>
+    <li><a href="https://www.reuters.com/business/sustainable-business/exclusive-airlines-sustainable-fuel-plans-face-delays-cancellations-data-shows-2023-09-14/" target="_blank">Reuters SAF Project Delays</a></li>
+    <li><a href="https://www.united.com/en/us/fly/about/sustainability" target="_blank">United Airlines SAF Program</a></li>
+    <li><a href="https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe" target="_blank">Airbus ZEROe Project</a></li>
+    <li><a href="https://www.zeroavia.com/" target="_blank">ZeroAvia Hydrogen Aircraft</a></li>
+  </ul>
+</div>
 
   <!-- Example of image with clickable link -->
   <a href="https://your-link-here.com" target="_blank">
