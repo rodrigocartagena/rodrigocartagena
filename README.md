@@ -6,7 +6,6 @@
   <title>Rodrigo Cartagena</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -97,7 +96,6 @@
       color: #1d4ed8;
       text-decoration: underline;
     }
-
     /* Cards Styling for Structured Content */
     .card {
       background: #ffffff;
@@ -117,7 +115,6 @@
       margin-bottom: 0.75rem;
       font-size: 1.25rem;
     }
-
     /* Lists */
     ul {
       padding-left: 1.5rem;
@@ -131,7 +128,6 @@
       border-top: 1px solid #e2e8f0;
       margin: 2rem 0;
     }
-
     .link-section {
       display: flex;
       flex-direction: column;
@@ -141,7 +137,6 @@
       color: #2563eb;
       word-break: break-word;
     }
-
     /* --- BLOGS styles --- */
     .blog-list {
       list-style: none;
@@ -215,7 +210,6 @@
       padding: 1.5rem;
       box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
-
     /* Photo gallery */
     .photo-gallery {
       display: grid;
@@ -237,7 +231,6 @@
       z-index: 10;
       position: relative;
     }
-
     /* Mobile adjustments */
     @media (max-width: 768px) {
       header h1 { font-size: 2.5rem; }
@@ -256,7 +249,6 @@
     <h1>Rodrigo Cartagena</h1>
     <p>Aspiring Engineer | Aviation Enthusiast | Science & Math Explorer</p>
   </header>
-
   <nav>
     <a href="#" class="active-tab" onclick="showTab('home', this)">Home</a>
     <a href="#" onclick="showTab('cv', this)">CV</a>
@@ -266,7 +258,6 @@
     <a href="#" onclick="showTab('blogs', this)">Blogs</a>
     <a href="#" onclick="showTab('experiences', this)">Experiences</a>
   </nav>
-
   <!-- HOME -->
   <div id="home" class="tab-content active">
     <h2>Welcome</h2>
@@ -285,7 +276,6 @@
       <a href="https://drive.google.com/" target="_blank">Not avalible yet!</a>
     </div>
   </div>
-
   <!-- CV -->
   <div id="cv" class="tab-content">
     <h2>My CV</h2>
@@ -347,7 +337,6 @@
       <li>Violin | Piano | Astronomy Club | Swimming | Tennis | Basketball</li>
     </ul>
   </div>
-
   <!-- COMMUNITIES -->
   <div id="communities" class="tab-content">
     <h2>Communities</h2>
@@ -356,25 +345,21 @@
       <h3>Canguro Matematico - Bolivia</h3>
       <p>It is the Bolivian branch of Kangourou sans Frontières, the world's most significant international mathematics competition. The Sociedad Boliviana de Educación Matemática and the Olimpiada Matemática Boliviana organize it to encourage mathematical thinking and problem-solving skills in students from third grade in elementary school to sixth grade in secondary school.</p>
     </div>
-
     <div class="card">
       <h3>Team Infinitum</h3>
       <p>A reputable organization for its excellence in preparing young people for national and worldwide arithmetic competitions. Their programs focus on advanced mathematical theories, logical thinking, and problem-solving techniques to give participants excellent comprehension and appreciation of mathematics.</p>
     </div>
-
     <div class="card">
       <h3>AstroCBA</h3>
       <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 200px; vertical-align: middle; margin-bottom: 15px; border-radius: 8px;">
       <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
       <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
     </div>
-
     <div class="card">
       <h3>Virtual Flight School Bolivia (EVV)</h3>
       <p>A pioneer organization in Bolivia for online aviation education was established in 2022 and uses cutting-edge flying simulators, such as Virtual Reality (VR) technology, to provide theoretical and hands-on training programs. Through its courses, students can obtain experience in a highly realistic setting before flying real aircraft, ranging from introductory levels for kids to programs for private and commercial pilots.</p>
     </div>
   </div>
-
   <!-- WEBINARS -->
   <div id="webinars" class="tab-content">
     <h2>Webinars</h2>
@@ -388,7 +373,6 @@
       </a>
     </div>
   </div>
-
   <!-- PROJECTS -->
   <div id="projects" class="tab-content">
     <h2>Projects</h2>
@@ -409,11 +393,9 @@
       <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Pronectss%203d%20print.%20eh.png?raw=true" alt="3D Printer Project" style="width: 300px; max-width: 100%; border-radius: 8px; margin-top: 10px;">
     </div>
   </div>
-
   <!-- BLOGS -->
   <div id="blogs" class="tab-content">
     <h2>Blogs</h2>
-
     <!-- List view -->
     <ul id="blogList" class="blog-list">
       <li class="blog-card" onclick="openBlogArticle('woh')">
@@ -425,61 +407,45 @@
         <p>Data, context, and what to watch in decarbonizing flight.</p>
       </li>
     </ul>
-
     <!-- Article: Wings Over Houston -->
     <div id="blog-woh" class="blog-article">
       <div class="blog-toolbar">
         <button class="btn" onclick="returnToBlogList()">← Back to Blogs</button>
         <span class="hint">Event recap and resources</span>
       </div>
-
       <h3>Wings Over Houston Air Show</h3>
       <p>
         Highlights from the show, favorite aircraft, and learning takeaways. (Add your write-up and photos here.)
       </p>
-
       <a href="https://your-link-here.com" target="_blank" rel="noopener">
         <img src="https://your-image-link-here.com/image.jpg" alt="Wings Over Houston Airshow" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 12px;">
       </a>
     </div>
-
     <!-- Article: Skyward Emissions -->
     <div id="blog-skyward" class="blog-article">
       <div class="blog-toolbar">
         <button class="btn" onclick="returnToBlogList()">← Back to Blogs</button>
         <span class="hint">Long read · with interactive chart</span>
       </div>
-
       <h3>Skyward Emissions: How Aviation Fuel Use Has Changed — and What It Means for Climate Change</h3>
-
       <p><em>Aviation is a small share of global energy use but punches above its weight in climate impact.</em> Over the last decades, new aircraft and operations have made flying far more fuel-efficient. Still, global jet fuel consumption and the climate footprint of the sector remain large — and the industry faces a steep challenge to decarbonize at the scale and speed climate science demands.</p>
-
       <h4>What the data show</h4>
       <p>Global jet fuel demand fell during the COVID shock but rebounded quickly as travel recovered. The <a href="https://www.iea.org/data-and-statistics/charts/global-aviation-fuel-consumption-2013-2021" target="_blank" rel="noopener">IEA’s historical charts</a> show year-by-year jet-fuel consumption trends (2013–2021) and are a good starting point for plotting recent recovery and pre-pandemic growth.</p>
-
       <p>Longer-term efficiency gains are real: analyses by the <a href="https://theicct.org/publication/aviation-global-jet-aircraft-fuel-burn-jan25/" target="_blank" rel="noopener">ICCT</a> find the average fuel burn of newly delivered jets decreased by roughly <strong>43%</strong> from 1970 to 2024, averaging about a 1% per-year reduction in block fuel intensity. Those gains come from better engines, lighter airframes, and improved operations — but improvements have slowed recently.</p>
-
       <p>Yet despite efficiency gains, sustainable fuels and zero-carbon propulsion are still tiny in the overall fuel mix. The <a href="https://www.iea.org/reports/aviation" target="_blank" rel="noopener">IEA</a> notes SAFs account for well under 1% of aviation fuel consumed today — meaning nearly all jet fuel burned is fossil kerosene.</p>
-
       <p>Finally, the policy and industrial picture is mixed: <a href="https://www.icao.int/environmental-protection/CORSIA/Pages/default.aspx" target="_blank" rel="noopener">ICAO’s CORSIA mechanism</a> and airline pledges aim for net-zero by 2050, but reporting and offset integrity remain contested; recent <a href="https://www.reuters.com/business/sustainable-business/exclusive-airlines-sustainable-fuel-plans-face-delays-cancellations-data-shows-2023-09-14/" target="_blank" rel="noopener">reporting</a> has shown many announced SAF projects have stalled or failed, limiting near-term supply growth.</p>
-
       <h4>Why aviation matters for climate</h4>
       <p><strong>Aviation emissions are unique:</strong> aircraft emit CO₂ at altitude, and contrails and other non-CO₂ effects (NOₓ, contrail cirrus) multiply their warming impact. Even if aviation stays a single-digit percentage of global CO₂ today, rapid post-pandemic traffic growth without meaningful fuel replacement would push cumulative warming higher — a problem climate models flag as significant for reaching Paris targets.</p>
-
       <!-- INTERACTIVE CHART -->
       <div class="chart-wrap">
         <canvas id="fuelChart" style="max-width: 860px; margin: 0 auto; display: block;"></canvas>
         <div id="eventInfo" class="info-panel"></div>
       </div>
-
       <h4>Solutions & what big companies are doing</h4>
-
       <h5>Sustainable Aviation Fuels (SAF)</h5>
       <p><strong>SAF</strong> (HEFA, waste-to-jet, power-to-liquid) can cut lifecycle CO₂ vs fossil jet fuel, but supply is tiny and production is expensive. Airlines and oil/energy firms have launched SAF partnerships and offtake agreements (for example <a href="https://www.united.com/en/us/fly/about/sustainability" target="_blank" rel="noopener">United’s SAF program</a>), but many announced projects have been delayed or canceled, and <a href="https://www.reuters.com/business/sustainable-business/exclusive-airlines-sustainable-fuel-plans-face-delays-cancellations-data-shows-2023-09-14/" target="_blank" rel="noopener">independent reporting</a> shows only a small fraction of announced SAF plants are operational.</p>
-
       <h5>Hydrogen and fuel cells / combustion</h5>
       <p>Aircraft makers are exploring hydrogen long-term. <a href="https://www.airbus.com/en/innovation/zero-emission/hydrogen/zeroe" target="_blank" rel="noopener">Airbus</a> has public ZEROe hydrogen concept work and continues R&D into hydrogen fuel-cell and turbine concepts; startups like <a href="https://www.zeroavia.com/" target="_blank" rel="noopener">ZeroAvia</a> are developing hydrogen powertrains, though the commercial path to scale is uncertain.</p>
-
       <h4>Future work</h4>
       <ul>
         <li><a href="https://www.iea.org/reports/aviation" target="_blank" rel="noopener">SAF scale-up</a> &amp; feedstock availability tracking</li>
@@ -487,7 +453,6 @@
         <li>Hydrogen feasibility trials &amp; infrastructure buildout</li>
         <li>Policy &amp; mandates (EU SAF mandate, US incentives)</li>
       </ul>
-
       <h5>References</h5>
       <ul>
         <li><a href="https://www.iea.org/data-and-statistics/charts/global-aviation-fuel-consumption-2013-2021" target="_blank" rel="noopener">IEA Global Aviation Fuel Consumption</a></li>
@@ -500,7 +465,6 @@
       </ul>
     </div>
   </div>
-
   <!-- EXPERIENCES -->
   <div id="experiences" class="tab-content">
     <h2>Experiences</h2>
@@ -515,39 +479,33 @@
       <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Tu9.jpg?raw=true" alt="Experience 8">
     </div>
   </div>
-
   <!-- Scripts -->
   <script>
     function showTab(tabId, element = null) {
       const tabs = document.querySelectorAll('.tab-content');
       tabs.forEach(tab => tab.classList.remove('active'));
       document.getElementById(tabId).classList.add('active');
-
       // Update active navigation item styling
       if (element) {
         document.querySelectorAll('nav a').forEach(a => a.classList.remove('active-tab'));
         element.classList.add('active-tab');
       }
-
       // When returning to Blogs list, ensure list view shows and articles hide
       if (tabId === 'blogs') {
         returnToBlogList();
       }
     }
-
     // BLOG view controls
     function openBlogArticle(which) {
       document.getElementById('blogList').style.display = 'none';
       document.querySelectorAll('.blog-article').forEach(el => el.classList.remove('active'));
       const target = document.getElementById(which === 'skyward' ? 'blog-skyward' : 'blog-woh');
       target.classList.add('active');
-
       // Lazy-init chart when Skyward opens
       if (which === 'skyward') {
         initFuelChart();
       }
     }
-
     function returnToBlogList() {
       document.getElementById('blogList').style.display = 'grid';
       document.querySelectorAll('.blog-article').forEach(el => el.classList.remove('active'));
@@ -556,28 +514,22 @@
       if (info) { info.style.display = 'none'; info.innerHTML = ''; }
     }
   </script>
-
   <!-- Chart.js (needed for the interactive line chart in Skyward article) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
     let skyChart;
-
     function initFuelChart() {
       const canvas = document.getElementById('fuelChart');
       if (!canvas) return;
-
       const ctx = canvas.getContext('2d');
-
       // Destroy if re-entering the article to avoid duplicate charts
       if (skyChart) {
         skyChart.destroy();
         skyChart = null;
       }
-
       // Decadal + key-event granularity (illustrative values)
       const labels = [1970, 1980, 1990, 2001, 2008, 2013, 2019, 2020, 2024];
       const values = [150, 180, 200, 195, 185, 220, 245, 160, 240]; // Mt (example series)
-
       const eventDetails = {
         1970: "First-gen wide-bodies expand capacity; higher fuel burn per passenger than today.",
         1980: "Twin-engine ETOPS and efficiency gains begin to spread.",
