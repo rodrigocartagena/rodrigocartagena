@@ -5,45 +5,140 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rodrigo Cartagena</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: white;
-      color: black;
+      font-family: 'Inter', 'Segoe UI', sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+      line-height: 1.6;
     }
     header {
-      background-color: #0f172a;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
       color: white;
-      padding: 2rem;
+      padding: 4rem 2rem;
       text-align: center;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 1rem;
+      color: #cbd5e1;
+      font-weight: 400;
     }
     nav {
-      background-color: #1e293b;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 0.5rem;
     }
     nav a {
-      color: #f1f5f9;
-      padding: 1rem 2rem;
+      color: #475569;
+      padding: 0.75rem 1.5rem;
+      margin: 0.25rem;
       display: block;
       text-decoration: none;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: all 0.3s ease;
     }
-    nav a:hover { background-color: #334155; }
+    nav a:hover, nav a.active-tab {
+      color: #0f172a;
+      background-color: #f1f5f9;
+    }
     .tab-content {
       display: none;
-      padding: 2rem;
+      padding: 3rem 2.5rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.4s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     .active { display: block; }
-    .link-section { margin-top: 1rem; }
-    .link-section a {
-      display: block;
-      margin-bottom: 0.5rem;
+    
+    h1, h2, h3, h4, h5 {
+      color: #0f172a;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      margin-bottom: 1.25rem;
+    }
+    a {
       color: #2563eb;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #1d4ed8;
       text-decoration: underline;
+    }
+
+    /* Cards Styling for Structured Content */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+    }
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.25rem;
+    }
+
+    /* Lists */
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #e2e8f0;
+      margin: 2rem 0;
+    }
+
+    .link-section {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .link-section a {
+      color: #2563eb;
       word-break: break-word;
     }
 
@@ -53,109 +148,135 @@
       padding: 0;
       margin: 1rem 0 2rem 0;
       display: grid;
-      gap: 1rem;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
     .blog-card {
       border: 1px solid #e2e8f0;
       border-radius: 12px;
-      padding: 1rem 1.25rem;
-      background: #f8fafc;
-      transition: transform .12s ease, box-shadow .12s ease;
+      padding: 1.5rem;
+      background: #ffffff;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
       cursor: pointer;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
     .blog-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.12);
-      background: #eef2ff;
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(15, 23, 42, 0.1);
+      background: #f8fafc;
     }
     .blog-card h4 {
-      margin: 0 0 .25rem 0;
+      margin: 0 0 .5rem 0;
       color: #0f172a;
+      font-size: 1.15rem;
     }
     .blog-card p {
       margin: 0;
-      color: #334155;
+      color: #475569;
       font-size: .95rem;
     }
     .blog-article { display: none; }
-    .blog-article.active { display: block; }
+    .blog-article.active { display: block; animation: fadeIn 0.4s ease-out; }
     .blog-toolbar {
       display: flex;
       align-items: center;
-      gap: .75rem;
-      margin-bottom: 1rem;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
     }
     .btn {
-      border: 1px solid #1e293b;
+      border: none;
       background: #0f172a;
       color: #fff;
-      padding: .5rem .9rem;
-      border-radius: 10px;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
       cursor: pointer;
+      font-weight: 500;
+      transition: background 0.2s, transform 0.1s;
     }
-    .btn:hover { background: #1e293b; }
+    .btn:hover { background: #1e293b; transform: translateY(-1px); }
     .hint {
       font-size: .9rem;
-      color: #475569;
+      color: #64748b;
     }
     .info-panel {
-      max-width: 900px;
+      max-width: 100%;
       margin: 12px 0 0 0;
       background: #f8fafc;
       border: 1px solid #e2e8f0;
       border-radius: 12px;
-      padding: 1rem;
+      padding: 1.25rem;
       display:none;
     }
     .chart-wrap {
       margin: 20px auto;
-      background: #f8fafc;
+      background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 12px;
-      padding: 1rem;
-    }
-    .subtle-hr {
-      border: none;
-      border-top: 1px solid #e2e8f0;
-      margin: 1.5rem 0;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     }
 
-    /* Photo gallery from Experiences kept unchanged */
+    /* Photo gallery */
     .photo-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       gap: 1rem;
-      margin-top: 2rem;
+      margin-top: 1rem;
+    }
+    .photo-gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .photo-gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.15);
+      z-index: 10;
+      position: relative;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+      .tab-content { 
+        padding: 2rem 1.5rem; 
+        margin: 1rem;
+        border-radius: 12px;
+      }
+      .blog-list { grid-template-columns: 1fr; }
+      nav a { padding: 0.5rem 1rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1 style="font-size: 3rem;">Rodrigo Cartagena</h1>
-    <p style="font-size: 1.2rem;">Aspiring Engineer | Aviation Enthusiast | Science & Math Explorer</p>
+    <h1>Rodrigo Cartagena</h1>
+    <p>Aspiring Engineer | Aviation Enthusiast | Science & Math Explorer</p>
   </header>
 
   <nav>
-    <a href="#" onclick="showTab('home')">Home</a>
-    <a href="#" onclick="showTab('cv')">CV</a>
-    <a href="#" onclick="showTab('communities')">Communities</a>
-    <a href="#" onclick="showTab('webinars')">Webinars</a>
-    <a href="#" onclick="showTab('projects')">Projects</a>
-    <a href="#" onclick="showTab('blogs')">Blogs</a>
-    <a href="#" onclick="showTab('experiences')">Experiences</a>
+    <a href="#" class="active-tab" onclick="showTab('home', this)">Home</a>
+    <a href="#" onclick="showTab('cv', this)">CV</a>
+    <a href="#" onclick="showTab('communities', this)">Communities</a>
+    <a href="#" onclick="showTab('webinars', this)">Webinars</a>
+    <a href="#" onclick="showTab('projects', this)">Projects</a>
+    <a href="#" onclick="showTab('blogs', this)">Blogs</a>
+    <a href="#" onclick="showTab('experiences', this)">Experiences</a>
   </nav>
 
   <!-- HOME -->
   <div id="home" class="tab-content active">
     <h2>Welcome</h2>
-    <p>Hello! I'm Rodrigo Cartagena,</p>
-    <p>I grew up in Bolivia, a country with huge mountains, dense jungles, and wide, open spaces that can feel like a different world. Since getting from one place to another wasn't always easy or cheap, airplanes were like magic. They could fly over the Andes, cut through the Amazon, and connect people in just a few hours. That wonder from childhood soon became a genuine passion.</p>
-    <p>Because of my passion for flying, I immediately became interested in STEM fields, particularly math, physics, and astronomy. I even had the privilege of competing internationally on behalf of Bolivia! The most important thing I've learned from every obstacle is that you can't merely admire airplanes; you must know about them, find ways to improve them, and ensure that flying is affordable and accessible for everyone.</p>
-    <p>But science isn't everything! I also love music—learning to play the violin and piano has taught me that often the greatest way to grasp the world is via a melody—astronomy, which reminds me how small and magnificent we are in the universe, and chess, which taught me to think a few steps ahead constantly.</p>
-    <p>I enjoy seeing amazing places, learning about different cultures, and traveling. Every journey motivates me to set higher goals and put in more effort to create a future where flying is accessible, easier, and cleaner.</p>
-    <p>I appreciate you joining me on this journey to build a world where technology preserves the environment, fosters human connection, and makes advancement accessible to everyone!</p>
-    <p>Additionally, never forget that the sky is only the beginning!</p>
+    <p>Hello! I'm Rodrigo Cartagena.</p>
+    <p>I grew up in Bolivia, a country of mountains, jungles, and huge open landscapes that often feel like a different world. Traveling between places was not always easy or affordable, so airplanes always fascinated me. They could cross the Andes, fly over the Amazon, and connect distant cities in only a few hours. What started as childhood curiosity eventually became a real passion.</p>
+    <p>That interest in aviation quickly led me to STEM, especially mathematics, physics, and astronomy. Over time, I had the opportunity to compete in international science and math competitions representing Bolivia, which helped me develop discipline, curiosity, and persistence. One lesson that stayed with me is that it is not enough to admire technology. If you truly care about it, you have to understand how it works and think about how it can be improved. I hope to contribute to a future where aviation becomes more efficient, accessible, and environmentally responsible.</p>
+    <p>Outside of science, I enjoy music and creative activities. Playing the violin and piano has taught me patience and attention to detail, while astronomy constantly reminds me how vast and fascinating the universe is. I also enjoy chess, which challenges me to think ahead and approach problems strategically.</p>
+    <p>I love traveling, exploring new places, and learning about different cultures. Every experience motivates me to aim higher and work harder toward my long term goal of helping develop technologies that make transportation cleaner, more efficient, and more accessible.</p>
+    <p>Thank you for visiting my website and following my journey. I believe technology should connect people, protect our planet, and create opportunities for future generations.</p>
+    <p>And remember, the sky is only the beginning.</p>
     <hr />
     <h3>Recommended pages:</h3>
     <div class="link-section">
@@ -167,7 +288,7 @@
 
   <!-- CV -->
   <div id="cv" class="tab-content">
-    <h1>My CV</h1>
+    <h2>My CV</h2>
     <h3>My contact information:</h3>
     <ul>
       <li>Email: rodrigocartagenav10@gmail.com </li>
@@ -182,7 +303,7 @@
     </ul>
     <hr/>
     <h3>Awards and Honors</h3>
-    <h3>International Awards</h3>
+    <h4>International Awards</h4>
     <ul>
       <li>Bronze Medal, Copernicus Olympiad Mathematics – New York, 2024</li>
       <li>Honorable Mention, AMC 8 – USA, 2024</li>
@@ -195,7 +316,7 @@
       <li>Silver Medal, TalentGO – Peru, 2021</li>
       <li>Gold Medal, Mateam – Mexico, 2021</li>
     </ul>
-    <h3>Bolivian Awards</h3>
+    <h4>Bolivian Awards</h4>
     <ul>
       <li>Senate Chamber Tribute, Bolivia, 2024</li>
       <li>Silver Medal, Mathematical Kangaroo – Santa Cruz, Bolivia, 2023</li>
@@ -204,7 +325,7 @@
       <li>Silver Medal, Physics, Plurinational Student Scientific Olympiad of Bolivia (OCEPB) – Cochabamba, Bolivia, 2022</li>
       <li>Silver Medal, Physics, Plurinational Student Scientific Olympiad of Bolivia (OCEPB) – Santa Cruz, Bolivia, 2023</li>
     </ul>
-    <h3>Regional Awards</h3>
+    <h4>Regional Awards</h4>
     <ul>
       <li>Silver Medal, UPSA-MAT – Santa Cruz, Bolivia, 2022</li>
     </ul>
@@ -225,54 +346,71 @@
     <ul>
       <li>Violin | Piano | Astronomy Club | Swimming | Tennis | Basketball</li>
     </ul>
-    <hr>
   </div>
 
   <!-- COMMUNITIES -->
   <div id="communities" class="tab-content">
     <h2>Communities</h2>
-    <h3><strong>Canguro Matematico - Bolivia</strong></h3>
-    <p>It is the Bolivian branch of Kangourou sans Frontières, the world's most significant international mathematics competition. The Sociedad Boliviana de Educación Matemática and the Olimpiada Matemática Boliviana organize it to encourage mathematical thinking and problem-solving skills in students from third grade in elementary school to sixth grade in secondary school.</p>
+    
+    <div class="card">
+      <h3>Canguro Matematico - Bolivia</h3>
+      <p>It is the Bolivian branch of Kangourou sans Frontières, the world's most significant international mathematics competition. The Sociedad Boliviana de Educación Matemática and the Olimpiada Matemática Boliviana organize it to encourage mathematical thinking and problem-solving skills in students from third grade in elementary school to sixth grade in secondary school.</p>
+    </div>
 
-    <h3><strong>Team Infinitum</strong></h3>
-    <p>A reputable organization for its excellence in preparing young people for national and worldwide arithmetic competitions. Their programs focus on advanced mathematical theories, logical thinking, and problem-solving techniques to give participants excellent comprehension and appreciation of mathematics.</p>
+    <div class="card">
+      <h3>Team Infinitum</h3>
+      <p>A reputable organization for its excellence in preparing young people for national and worldwide arithmetic competitions. Their programs focus on advanced mathematical theories, logical thinking, and problem-solving techniques to give participants excellent comprehension and appreciation of mathematics.</p>
+    </div>
 
-    <h3><strong>AstroCBA</strong></h3>
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 200px; vertical-align: middle; margin-left: 10px;">
-    <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
-    <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
+    <div class="card">
+      <h3>AstroCBA</h3>
+      <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Jaha.png?raw=true" alt="AstroCBA Logo" style="width: 200px; vertical-align: middle; margin-bottom: 15px; border-radius: 8px;">
+      <p>The Bolivian American Center (CBA) in Santa Cruz, Bolivia, is home to this young astronomy group. They aim to pique children's and teenagers' interest in and enthusiasm for the stars! They host astronomy workshops, telescope evenings, and even departmental astronomy Olympiads for younger students, among other entertaining and instructive events. Additionally, AstroCBA is pleased to send students to compete internationally, such as the Latin American Astronomy Olympiads, on behalf of Bolivia.</p>
+      <p>Fundamentally, AstroCBA's goal is to introduce young people to the cosmos one starry night at a time.</p>
+    </div>
 
-    <h3><strong>Virtual Flight School Bolivia (EVV)</strong></h3>
-    <p>A pioneer organization in Bolivia for online aviation education was established in 2022 and uses cutting-edge flying simulators, such as Virtual Reality (VR) technology, to provide theoretical and hands-on training programs. Through its courses, students can obtain experience in a highly realistic setting before flying real aircraft, ranging from introductory levels for kids to programs for private and commercial pilots. </p>
+    <div class="card">
+      <h3>Virtual Flight School Bolivia (EVV)</h3>
+      <p>A pioneer organization in Bolivia for online aviation education was established in 2022 and uses cutting-edge flying simulators, such as Virtual Reality (VR) technology, to provide theoretical and hands-on training programs. Through its courses, students can obtain experience in a highly realistic setting before flying real aircraft, ranging from introductory levels for kids to programs for private and commercial pilots.</p>
+    </div>
   </div>
 
   <!-- WEBINARS -->
   <div id="webinars" class="tab-content">
     <h2>Webinars</h2>
-    <h3>Black Holes</h3>
-    <p>In my webinar about black holes, I explained how these mysterious giants can absorb and change the energy and matter of nearby stars to grow even bigger. I used simple examples and cool pictures to make it easy for everybody to understand. I loved talking about one of the most incredible things about the world, and I hope it makes more people want to stay interested and keep exploring space.</p>
-    <hr>
-    <a href="https://www.facebook.com/watch/?v=1062135828030609" target="_blank" rel="noopener">
-      <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Screenshot%202025-04-27%20235230.png?raw=true" alt="Black Hole Webinar" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
-    </a>
+    
+    <div class="card">
+      <h3>Black Holes</h3>
+      <p>In my webinar about black holes, I explained how these mysterious giants can absorb and change the energy and matter of nearby stars to grow even bigger. I used simple examples and cool pictures to make it easy for everybody to understand. I loved talking about one of the most incredible things about the world, and I hope it makes more people want to stay interested and keep exploring space.</p>
+      <hr>
+      <a href="https://www.facebook.com/watch/?v=1062135828030609" target="_blank" rel="noopener">
+        <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Screenshot%202025-04-27%20235230.png?raw=true" alt="Black Hole Webinar" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+      </a>
+    </div>
   </div>
 
   <!-- PROJECTS -->
   <div id="projects" class="tab-content">
     <h2>Projects</h2>
-    <h3>Sky Match: Fighter Jets</h3>
-    <p>It is a matching pairs game, which requires players to find and identify concealed cards, recognizing the name, model, and key features of the aircraft. This improves working memory and focus, which decline with age but can be maintained with mental training. It also boosts visual and spatial memory, which helps the brain establish new neural connections and build cognitive resilience. Moreover, improving or winning boosts self-esteem and delight, making it more than a mental workout.</p>
-    <hr>
-    <h3>Blue Sky Builders</h3>
-    <p>Reimagining aviation's future is the goal of this game, not merely building airports or flying planes! Players learn sustainability tactics and enjoy competition and collaboration by making wise choices to cut CO₂ emissions. It's a fun, hands-on method to promote greener skies and demonstrate that innovation and sustainability coexist. Every move contributes to a better tomorrow.</p>
-    <hr>
-    <h3>3D Printer</h3>
-    <p>My favorite tool is my 3D printer! I use it to build scale aviation models and custom parts to realize my ideas. Designing something on a computer and seeing it evolve is fascinating. My 3D printing projects teach me about aerodynamics, engineering, and problem-solving.</p>
-    <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Pronectss%203d%20print.%20eh.png?raw=true"  style="width: 300px; vertical-align: middle; margin-bottom: 10px;">
-    <hr>
+    
+    <div class="card">
+      <h3>Sky Match: Fighter Jets</h3>
+      <p>It is a matching pairs game, which requires players to find and identify concealed cards, recognizing the name, model, and key features of the aircraft. This improves working memory and focus, which decline with age but can be maintained with mental training. It also boosts visual and spatial memory, which helps the brain establish new neural connections and build cognitive resilience. Moreover, improving or winning boosts self-esteem and delight, making it more than a mental workout.</p>
+    </div>
+    
+    <div class="card">
+      <h3>Blue Sky Builders</h3>
+      <p>Reimagining aviation's future is the goal of this game, not merely building airports or flying planes! Players learn sustainability tactics and enjoy competition and collaboration by making wise choices to cut CO₂ emissions. It's a fun, hands-on method to promote greener skies and demonstrate that innovation and sustainability coexist. Every move contributes to a better tomorrow.</p>
+    </div>
+    
+    <div class="card">
+      <h3>3D Printer</h3>
+      <p>My favorite tool is my 3D printer! I use it to build scale aviation models and custom parts to realize my ideas. Designing something on a computer and seeing it evolve is fascinating. My 3D printing projects teach me about aerodynamics, engineering, and problem-solving.</p>
+      <img src="https://github.com/rodrigocartagena/rodrigocartagena/blob/main/Pronectss%203d%20print.%20eh.png?raw=true" alt="3D Printer Project" style="width: 300px; max-width: 100%; border-radius: 8px; margin-top: 10px;">
+    </div>
   </div>
 
-  <!-- BLOGS (improved) -->
+  <!-- BLOGS -->
   <div id="blogs" class="tab-content">
     <h2>Blogs</h2>
 
@@ -283,7 +421,7 @@
         <p>Photos, highlights, and notes from the show.</p>
       </li>
       <li class="blog-card" onclick="openBlogArticle('skyward')">
-        <h4>Skyward Emissions: How Aviation Fuel Use Has Changed — and What It Means for Climate Change</h4>
+        <h4>Skyward Emissions: How Aviation Fuel Use Has Changed</h4>
         <p>Data, context, and what to watch in decarbonizing flight.</p>
       </li>
     </ul>
@@ -300,9 +438,8 @@
         Highlights from the show, favorite aircraft, and learning takeaways. (Add your write-up and photos here.)
       </p>
 
-      <!-- Keep your existing example link (replace with your real URL/image when ready) -->
       <a href="https://your-link-here.com" target="_blank" rel="noopener">
-        <img src="https://your-image-link-here.com/image.jpg" alt="Wings Over Houston Airshow" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+        <img src="https://your-image-link-here.com/image.jpg" alt="Wings Over Houston Airshow" style="max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 12px;">
       </a>
     </div>
 
@@ -329,7 +466,7 @@
       <h4>Why aviation matters for climate</h4>
       <p><strong>Aviation emissions are unique:</strong> aircraft emit CO₂ at altitude, and contrails and other non-CO₂ effects (NOₓ, contrail cirrus) multiply their warming impact. Even if aviation stays a single-digit percentage of global CO₂ today, rapid post-pandemic traffic growth without meaningful fuel replacement would push cumulative warming higher — a problem climate models flag as significant for reaching Paris targets.</p>
 
-      <!-- INTERACTIVE CHART (between Why... and Solutions...) -->
+      <!-- INTERACTIVE CHART -->
       <div class="chart-wrap">
         <canvas id="fuelChart" style="max-width: 860px; margin: 0 auto; display: block;"></canvas>
         <div id="eventInfo" class="info-panel"></div>
@@ -381,10 +518,16 @@
 
   <!-- Scripts -->
   <script>
-    function showTab(tabId) {
+    function showTab(tabId, element = null) {
       const tabs = document.querySelectorAll('.tab-content');
       tabs.forEach(tab => tab.classList.remove('active'));
       document.getElementById(tabId).classList.add('active');
+
+      // Update active navigation item styling
+      if (element) {
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active-tab'));
+        element.classList.add('active-tab');
+      }
 
       // When returning to Blogs list, ensure list view shows and articles hide
       if (tabId === 'blogs') {
@@ -438,72 +581,4 @@
       const eventDetails = {
         1970: "First-gen wide-bodies expand capacity; higher fuel burn per passenger than today.",
         1980: "Twin-engine ETOPS and efficiency gains begin to spread.",
-        1990: "Operational improvements & higher load factors reduce per-seat intensity.",
-        2001: "9/11 demand shock; security changes; gradual recovery afterward.",
-        2008: "Oil price spike + Great Financial Crisis depress traffic temporarily.",
-        2013: "Recovery continues; LCC growth & hub-and-spoke efficiency raise total demand.",
-        2019: "Pre-COVID peak traffic; efficiency improves but total fuel still high.",
-        2020: "COVID shock collapses demand; historic one-year drop in fuel burn.",
-        2024: "Rebound near/above prior highs; SAF still <1% of fuel; contrails/non-CO₂ remain concerns."
-      };
-
-      skyChart = new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels,
-          datasets: [{
-            label: 'Global Aviation Fuel Consumption (Mt)',
-            data: values,
-            fill: false,
-            borderColor: '#2563eb',
-            backgroundColor: '#1e40af',
-            tension: 0.2,
-            pointRadius: 5,
-            pointHoverRadius: 7
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          plugins: {
-            tooltip: {
-              callbacks: {
-                afterLabel: function(context) {
-                  const year = context.label;
-                  return eventDetails[year] ? "Event: " + eventDetails[year] : "";
-                }
-              }
-            },
-            legend: { display: true }
-          },
-          scales: {
-            x: { ticks: { color: '#0f172a' }, grid: { color: '#e2e8f0' } },
-            y: {
-              beginAtZero: false,
-              title: { display: true, text: 'Million tonnes (Mt)' },
-              ticks: { color: '#0f172a' },
-              grid: { color: '#e2e8f0' }
-            }
-          },
-          onClick: (evt, elements) => {
-            const info = document.getElementById('eventInfo');
-            const points = skyChart.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
-            if (points.length) {
-              const idx = points[0].index;
-              const year = labels[idx];
-              const value = values[idx];
-              const detail = eventDetails[year] || 'No event data available.';
-              info.innerHTML = `
-                <strong>${year}</strong> — ~${value} Mt estimated fuel consumption.<br/>
-                <em>Context:</em> ${detail}<br/>
-                <span style="color:#334155">Higher total fuel burn contributes to CO₂ and non-CO₂ effects (e.g., contrails), amplifying climate impact.</span>
-              `;
-              info.style.display = 'block';
-            }
-          }
-        }
-      });
-    }
-  </script>
-</body>
-</html>
+        199
